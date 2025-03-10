@@ -85,8 +85,9 @@ const zombieFightersInit = [
 ];
 
 const FighterCard = (props) => {
-  const { name, img, price, strength, agility } = { ...props.fighter };
-  const manageButton = <button onClick={() => props.handler(props.fighter)}>{props.add ? "Buy" : "Sell"} Fighter!</button>;
+  const fighter = props.fighter;
+  const { name, img, price, strength, agility } = { ...fighter };
+  const manageButton = <button onClick={() => props.handler(fighter)}>{props.add ? "Buy" : "Sell"} Fighter!</button>;
 
   return (
     <li>
