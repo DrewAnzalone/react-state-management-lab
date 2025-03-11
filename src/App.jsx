@@ -102,7 +102,6 @@ const FighterCard = (props) => {
 }
 
 const App = () => {
-  const test = ''
   const [team, setTeam] = useState([]);
   const [money, setMoney] = useState(100);
   const [zombieFighters, setZombieFighters] = useState(zombieFightersInit);
